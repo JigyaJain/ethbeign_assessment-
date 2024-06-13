@@ -42,7 +42,7 @@ contract MyToken {
     mapping(address => uint) public bal;   //bal == balances
 
     // mint function
-    function setSupply (address add, uint value) public {
+    function setMint (address add, uint value) public {
         
         totalSupply += value;
         bal[add] += value;
